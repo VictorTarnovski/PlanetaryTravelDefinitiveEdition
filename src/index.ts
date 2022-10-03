@@ -2,6 +2,7 @@ import Express from "express";
 
 const app = Express();
 app.use(Express.json())
+
 const port = 1824;
 const hostname = "http://127.0.0.1:";
 
@@ -15,5 +16,4 @@ app.get("/", (req, res) => {
 
 app.post('/travels/create', (req, res) => {
     res.json(req.body)
-    console.log('Post com sucesso')
 })
