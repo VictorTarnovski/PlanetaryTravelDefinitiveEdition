@@ -3,5 +3,11 @@ import { CreateTravelService } from "../Services/CreateTravel";
 
 export async function CreateTravelController(req: Request, res: Response) {
   const { Starship, Pilot, Copilot, OrigPlanet, DestPlanet } = req.body;
-  const travel = await CreateTravelService(req.body);
+  const travel = await CreateTravelService({
+    Starship,
+    Pilot,
+    Copilot,
+    OrigPlanet,
+    DestPlanet,
+  });
 }

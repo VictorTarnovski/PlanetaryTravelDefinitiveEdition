@@ -1,9 +1,9 @@
 import { Router, Request, Response } from "express";
 
-import { CreateTravelService } from "../Services/CreateTravel";
+import { CreateTravelController } from "../Controllers/CreateTravel";
 
 const TravelRouter = Router();
 
-TravelRouter.post("/travels/create", CreateTravelService);
+TravelRouter.post("/travels/create", CreateTravelController);
 
 export { TravelRouter };
