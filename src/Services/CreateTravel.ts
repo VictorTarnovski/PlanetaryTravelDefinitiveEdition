@@ -1,17 +1,5 @@
 import { Travel } from "../Database/models/Travel";
 
-export async function CreateTravelService({
-  Starship,
-  Pilot,
-  Copilot,
-  OrigPlanet,
-  DestPlanet,
-}: any) {
-  const travel = new Travel();
-  travel.Starship = Starship;
-  travel.Pilot = Pilot;
-  travel.Copilot = Copilot;
-  travel.OrigPlanet = OrigPlanet;
-  travel.DestPlanet = DestPlanet;
-  Travel.create(travel);
+export async function CreateTravelService(ControllerBody: any) {
+  console.log("Service Acessado.... Tentando comunicação com o banco");
 }
