@@ -1,4 +1,3 @@
-import bodyParser from "body-parser";
 import Express, { Response, Request } from "express";
 
 import { TravelRouter } from "./Routes/Router";

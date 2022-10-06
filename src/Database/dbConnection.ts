@@ -4,7 +4,7 @@ export async function dbConnect() {
   mongoose
     .connect("mongodb://127.0.0.1:27017/Tests")
     .then(() => {
-      console.log("Conexão aceita com o banco");
+      console.log("Database connection accepted");
     })
     .catch((error: Error) => {
       console.log(error);
