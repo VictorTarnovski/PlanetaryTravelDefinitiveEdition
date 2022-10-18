@@ -8,12 +8,12 @@ export default async function PilotExists(req: Request, res: Response) {
   while (PilotExist == false) {
     ExistingPilots = await GetName(Pilot);
     if (Pilot == ExistingPilots) {
-      console.log("Encontrei o piloto")
       PilotExist = true;
       res.status(200).json("Piloto existe na SWAPI");
       break;
     } else {
-      console.log("Não encontrei o piloto");
+      res.status(404).json("Piloto não existe na SWAPI");
+      break;
       }
   }
   return PilotExist;
