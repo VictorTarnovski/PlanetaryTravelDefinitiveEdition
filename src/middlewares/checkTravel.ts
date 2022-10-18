@@ -17,11 +17,7 @@ export default function checkTravel(
     res
       .status(400)
       .json("The Origin Planet and the Destination Planet can't be the same!");
-  }
-  if (
-    checkTravelBody.Pilot != checkTravelBody.Copilot &&
-    checkTravelBody.OrigPlanet != checkTravelBody.DestPlanet
-  ) {
+  }else {
     console.log("Middleware Passed");
     return next();
   }

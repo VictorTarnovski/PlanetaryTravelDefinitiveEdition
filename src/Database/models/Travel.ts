@@ -2,7 +2,6 @@ import mongoose from "mongoose";
 
 const TravelSchema = new mongoose.Schema(
   {
-    _id: Object,
     Starship: {
       type: String,
     },
