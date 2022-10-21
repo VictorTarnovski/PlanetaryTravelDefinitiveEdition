@@ -1,4 +1,4 @@
-# modulePlanetary-Travel
+# Planetary-Travel Basics
 
 Projeto Planetary Travels - Using SWAPI
 
