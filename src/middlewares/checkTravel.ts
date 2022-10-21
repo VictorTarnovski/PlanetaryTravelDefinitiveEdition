@@ -1,6 +1,6 @@
 import { Request, Response, NextFunction } from "express";
 
-export default function checkTravel(
+export default function CheckTravel(
   req: Request,
   res: Response,
   next: NextFunction

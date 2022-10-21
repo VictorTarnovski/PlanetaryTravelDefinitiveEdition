@@ -1,6 +1,6 @@
 import Express, { Response, Request } from "express";
 
-import { TravelRouter } from "./src/Routes/Router";
+import { TravelRouter } from "./Routes/Router";
 
 const app = Express();
 
