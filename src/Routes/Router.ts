@@ -9,9 +9,14 @@ import { GetTravelbyIDController } from "../Controllers/GetTravelByID";
 
 const TravelRouter = Router();
 
-TravelRouter.post("/travels/create", PilotExists, CopilotExists, CheckTravel,CreateTravelController);
+TravelRouter.post(
+  "/travels/create",
+  PilotExists,
+  CopilotExists,
+  CheckTravel,
+  CreateTravelController
+);
 TravelRouter.get("/travels", GetAllTravelsController);
 TravelRouter.get("/travels/:id", GetTravelbyIDController);
-TravelRouter.post("/copilot", CopilotExists);
 
 export { TravelRouter };
