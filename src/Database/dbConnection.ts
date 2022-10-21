@@ -1,8 +1,8 @@
 import mongoose from "mongoose";
-// Conexão com o Banco
+
 export async function dbConnect() {
   mongoose
-    .connect("mongodb://127.0.0.1:27017/Tests")
+    .connect("mongodb://127.0.0.1:27017/Planetary-Travels")
     .then(() => {
       console.log("Database connection accepted");
     })
