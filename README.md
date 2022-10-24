@@ -7,7 +7,7 @@ Ao subir o servidor e acessar as rotas, o TravelRouter direciona cada request a 
 Cada rota que depende da comunição com o banco de dados tem seu próprio controller e service posteriormente.
 Rotas de consulta na SWAPI tem sua pasta separada para realizar o GET geral das informações.
 
-===========================================================================================
+===============================================================
 Rotas da Aplicação:
 
 GET:
@@ -27,7 +27,7 @@ travels/id : Atualiza registro de viagem com base no seu ObjectID
 DELETE:
 travels/id : Encontra o ObjectID passado no endpoint e deleta o registro no banco
 
-===========================================================================================
+===============================================================
 
 Para rodar a aplição é necessário ter instalado pelo NPM os seguintes modulos/libs:
 (Use o npm install para fazer a instalação)
