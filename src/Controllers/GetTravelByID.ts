@@ -4,7 +4,7 @@ import GetTravelByID from "../Services/GetTravelByID";
 
 export async function GetTravelbyIDController(req: Request, res: Response) {
   console.log("Get Travels Controller Acessed");
-  const TravelID = req.params.id;
-  const TravelbyID = await GetTravelByID(TravelID);
-  return res.json(TravelbyID).status(200);
+  const travelID = req.params.id;
+  const travelByID = await GetTravelByID(travelID);
+  return res.json(travelByID).status(200);
 }

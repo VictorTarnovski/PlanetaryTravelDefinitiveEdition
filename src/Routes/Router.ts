@@ -1,6 +1,7 @@
 import { Router } from "express";
 
 const TravelRouter = Router();
+
 // Controllers
 import { CreateTravelController } from "../Controllers/CreateTravel";
 import { GetAllTravelsController } from "../Controllers/GetAllTravels";
@@ -37,4 +38,5 @@ TravelRouter.get("/people", GetPeople);
 TravelRouter.get("/starships", GetStarships);
 TravelRouter.get("/planets", GetPlanets);
 TravelRouter.get("/species", GetSpecies);
+
 export { TravelRouter };

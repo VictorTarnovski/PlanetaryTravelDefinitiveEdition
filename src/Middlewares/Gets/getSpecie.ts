@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export default async function GetSpecie<String>(name: string) {
+export default async function GetSpecie(name: string) {
   let specieGet = await axios.get(
     `https://swapi.dev/api/people/?search=${name}`
   );

@@ -1,5 +1,5 @@
 import dbConnect from "../Database/dbConnection";
-import { Travel } from "../Database/models/Travel";
+import { Travel } from "../Database/Models/Travel";
 
 export async function CreateTravelService(ControllerBody: any) {
   console.log("Service Acessed....");
