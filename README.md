@@ -12,6 +12,7 @@ Rotas de consulta na SWAPI tem sua pasta separada para realizar o GET geral das 
 Rotas da Aplicação:
 
 GET:
+
 /travels : Lista todas as viagens criadas no banco
 
 /travels/id : Faz a query no banco pelo ObjectID do MongoDB
