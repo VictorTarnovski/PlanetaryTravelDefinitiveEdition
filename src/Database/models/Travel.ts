@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 
 const TravelSchema = new mongoose.Schema(
-  {/
+  {
     Starship: {
       type: String,
     },
