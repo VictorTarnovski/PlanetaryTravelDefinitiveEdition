@@ -13,10 +13,15 @@ Rotas da Aplicação:
 
 GET:
 /travels : Lista todas as viagens criadas no banco
+
 /travels/id : Faz a query no banco pelo ObjectID do MongoDB
+
 /people : Consulta todos os personagens existentes na API do StarWars
+
 /starships : Consulta todas as naves existentes na API do StarWars
+
 /planets : Consulta todos os planetas existentes na API do StarWars
+
 /species : Consulta todas as espécies existentes na API do StarWars
 
 POST:
