@@ -8,6 +8,7 @@ Cada rota que depende da comunição com o banco de dados tem seu próprio contr
 Rotas de consulta na SWAPI tem sua pasta separada para realizar o GET geral das informações.
 
 ===============================================================
+
 Rotas da Aplicação:
 
 GET:
