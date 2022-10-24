@@ -1,9 +1,9 @@
+import { ObjectId } from "mongodb";
 import dbConnect from "../Database/dbConnection";
 import { Travel } from "../Database/Models/Travel";
 
 export async function CreateTravelService(ControllerBody: any) {
-  console.log("Service Acessed....");
-  console.log("Trying to comunicate with the Database");
   dbConnect();
-  Travel.create(ControllerBody);
+  let travel = await Travel.create(ControllerBody);
+  return travel
 }

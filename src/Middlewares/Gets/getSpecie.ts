@@ -8,7 +8,6 @@ export default async function GetSpecie(name: string) {
   if (specieGetData.count != 0) {
     let specieGetDataResults = specieGetData.results[0];
     let specieGetDataResultsSpecie = specieGetDataResults.species[0];
-    console.log(specieGetDataResultsSpecie);
     return specieGetDataResultsSpecie;
   }
 }

@@ -10,10 +10,10 @@ export default async function CopilotExists(
   let existingPilots: any;
   existingPilots = await GetName(copilot);
   if (copilot == existingPilots) {
-    console.log("Copiloto existe na SWAPI");
+    console.log("Found the Copilot on the API");
     next();
   } else {
-    console.log("Copiloto não existe na SWAPI");
+    console.log("Did not found the Copilot on the API");
     res.status(404).json("Copilot does not exist on the SWAPI");
   }
 }
