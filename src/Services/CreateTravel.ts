@@ -5,5 +5,5 @@ import { Travel } from "../Database/Models/Travel";
 export async function CreateTravelService(ControllerBody: any) {
   dbConnect();
   let travel = await Travel.create(ControllerBody);
-  return travel
+  return travel._id
 }

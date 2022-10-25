@@ -4,8 +4,8 @@ import { CreateTravelService } from "../Services/CreateTravel";
 
 export async function CreateTravelController(req: Request, res: Response) {
   let controllerBody = req.body;
-  let travel = await CreateTravelService(controllerBody);
+  let travelID = await CreateTravelService(controllerBody);
   return res
-    .status(201)
-    .send(travel);
+    .status(200)
+    .send(`Travel created with the ID: ${travelID}`);
 }
