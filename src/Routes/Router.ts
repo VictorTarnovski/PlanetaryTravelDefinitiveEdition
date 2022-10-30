@@ -6,8 +6,8 @@ const TravelRouter = Router();
 import { CreateTravelController } from "../Controllers/CreateTravel";
 import { GetAllTravelsController } from "../Controllers/GetAllTravels";
 import { GetTravelbyIDController } from "../Controllers/GetTravelByID";
-import { UpdateTravelController } from "../Controllers/UpdateTravel"
-import { DeleteTravelController } from "../Controllers/DeleteTravelController"
+import { UpdateTravelController } from "../Controllers/UpdateTravel";
+import { DeleteTravelController } from "../Controllers/DeleteTravelController";
 
 // Middlewares / Travel Validations
 import PilotExists from "../Middlewares/checkPilot";
@@ -36,7 +36,13 @@ TravelRouter.get("/travels", GetAllTravelsController);
 TravelRouter.get("/travels/:id", GetTravelbyIDController);
 
 // Database Modelation
-TravelRouter.put("/travels/:id", UpdateTravelController);
+TravelRouter.put(
+  "/travels/:id",
+  PilotExists,
+  CopilotExists,
+  CheckTravel,
+  UpdateTravelController
+);
 TravelRouter.delete("/travels/:id", DeleteTravelController);
 
 // External Get's
