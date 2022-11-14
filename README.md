@@ -55,11 +55,9 @@ Link para instalação: https://www.mongodb.com/try/download/community
 
 ===============================================================
 
-Caso queira , a aplicação está rodando na AWS por meio do host: 
+Caso queira , a aplicação está rodando na AWS por meio do host e port:
 
-ec2-18-229-141-143.sa-east-1.compute.amazonaws.com
-
-E pela porta : 66
+ec2-18-229-141-143.sa-east-1.compute.amazonaws.com: 66
 
 ===============================================================
 
