@@ -39,7 +39,7 @@ travels/id : Encontra o ObjectID passado no endpoint e deleta o registro no banc
 
 ===============================================================
 
-Para rodar a aplição é necessário ter instalado pelo NPM os seguintes modulos/libs:
+Para rodar a aplição localmente é necessário ter instalado pelo NPM os seguintes modulos/libs:
 (Use o npm install para fazer a instalação)
 
 EXPRESS
@@ -53,10 +53,20 @@ MONGOOSE
 Assim como ter o MongoDB Compass instalado
 Link para instalação: https://www.mongodb.com/try/download/community
 
+===============================================================
+
+Caso queira , a aplicação está rodando na AWS por meio do host: 
+
+ec2-18-229-141-143.sa-east-1.compute.amazonaws.com
+
+E pela porta : 66
+
+===============================================================
+
 Link para Collection no Postman:
 https://www.getpostman.com/collections/a6570efde798c12a40e0
 
-Exemplo de Post:
+Segue Exemplo de Post na rota Travels/Create:
 
 {
 "Starship": "Millennium Falcon",
