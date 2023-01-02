@@ -9,7 +9,10 @@ app.use(Express.json());
 app.use("/", TravelRouter);
 
 app.get("/", (req: Request, res: Response) => {
-  res.json("Server is running");
+  let response_message = {
+    message : "Server is running"
+  }
+  res.json(response_message)
 });
 
 export { app };
