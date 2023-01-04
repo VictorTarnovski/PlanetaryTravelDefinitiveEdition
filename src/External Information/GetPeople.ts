@@ -10,7 +10,7 @@ export default async function GetPeople(req: Request, res: Response) {
     let axiosGetPeopleArray = axiosGet.data.results
     for (let index = 0; index < axiosGetPeopleArray.length; index++) {
       const people = axiosGetPeopleArray[index];
-      const peopleName = people.name
+      const peopleName = { name: people.name }
       pilots.push(peopleName)
     }
   }
